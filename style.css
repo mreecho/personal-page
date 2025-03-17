@@ -39,6 +39,9 @@ img.rounded-circle {
     color: white !important;
 }
 
+.navbar.bg-dark {
+  background-color: #343a40 !important; /* Bootstrap's dark color */
+}
 
 
 

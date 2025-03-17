@@ -41,7 +41,3 @@ img.rounded-circle {
     width: 250px;
     height: 250px;
 }
-
-nav.navbar ul.nav-no-bg li {
-  background-color: transparent !important;
-}

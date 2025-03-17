@@ -2,12 +2,23 @@ body {
     font-family: 'Arial', sans-serif;
 }
 
+/* Navbar styling */
+nav.navbar.bg-dark.navbar-dark {
+    background-color: #343a40 !important;
+}
+
 nav.navbar.bg-dark.navbar-dark .navbar-nav .nav-link {
     color: white !important;
     font-weight: 500;
     padding: 0.5rem 1rem !important;
 }
 
+/* Override list items in the navigation bar so they don’t get the global white background */
+nav.navbar ul li {
+    background-color: transparent !important;
+}
+
+/* Global list styling */
 ul {
     list-style-type: none;
     padding: 0;
@@ -32,8 +43,4 @@ section {
 img.rounded-circle {
     width: 250px;
     height: 250px;
-}
-
-nav.navbar {
-    background-color: #343a40 !important; /* Dark gray, same as Bootstrap bg-dark */
 }

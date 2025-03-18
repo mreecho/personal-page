@@ -65,6 +65,29 @@ ul {
   text-align: left;
 }
 
+.education-card {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border: 2px solid #cce5ff !important;
+  border-radius: 15px !important;
+}
+
+.education-card .card-title {
+  color: #ffffff !important;
+  font-size: 1.5rem;
+  border-bottom: 2px solid #cce5ff;
+  padding-bottom: 0.5rem;
+}
+
+.education-card .card-subtitle {
+  color: #cce5ff !important;
+  font-size: 1.1rem;
+}
+
+.education-card .card-text {
+  font-size: 1rem;
+  line-height: 1.8;
+}
+
 ul li {
   background: #f8f9fa;
   padding: 10px;

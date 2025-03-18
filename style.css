@@ -20,7 +20,15 @@ body {
 
 main {
   flex: 1;
+  background-color: #007bff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 20px 0;
+}
+
+header.bg-primary {
+  background-color: transparent !important;
 }
 
 nav.navbar.bg-dark.navbar-dark {

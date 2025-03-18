@@ -9,116 +9,13 @@ html, body {
   box-sizing: inherit;
 }
 
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-  font-family: 'Arial', sans-serif;
-  background-color: #007bff;
-  color: white;
-}
-
-main {
-  flex: 1;
-  background-color: #007bff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 20px 0;
-}
-
-header.bg-primary {
-  background-color: transparent !important;
-  width: 100%;
-}
-
-nav.navbar.bg-dark.navbar-dark {
-  background-color: #343a40 !important;
-}
-
-nav.navbar.bg-dark.navbar-dark .navbar-nav .nav-link {
-  color: white !important;
-  font-weight: 500;
-  padding: 0.5rem 1rem !important;
-}
-
-.nav-link.active {
-  color: #007bff !important;
-  font-weight: bold !important;
-}
-
-.about-content p {
-  color: white !important;
-  font-size: 1.1rem;
-  line-height: 1.8;
-}
-
-.skills-content li {
-  color: white !important;
-  background-color: transparent !important;
-  border-left: 3px solid #cce5ff;
-  font-size: 1.1rem;
-  padding: 12px;
-  margin: 8px 0;
-  list-style: none;
-}
-
-.education-card {
-  background-color: rgba(255, 255, 255, 0.1) !important;
-  border: 2px solid #cce5ff !important;
-  border-radius: 15px !important;
-}
-
-.education-card .card-title {
-  color: #ffffff !important;
-  font-size: 1.5rem;
-  border-bottom: 2px solid #cce5ff;
-  padding-bottom: 0.5rem;
-}
-
-.education-card .card-subtitle {
-  color: #cce5ff !important;
-  font-size: 1.1rem;
-}
-
-.contact-content .contact-card {
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 2px solid #cce5ff;
-  border-radius: 15px;
-  padding: 2rem;
-}
-
-.contact-content li {
-  color: white !important;
-  background-color: transparent !important;
-  border-left: 3px solid #cce5ff;
-  padding: 10px;
-  margin: 15px 0;
-  list-style: none;
-}
-
-.contact-content .form-control {
-  background-color: rgba(255, 255, 255, 0.1);
-  border: 1px solid #cce5ff;
-  color: white;
-}
-
-.contact-content .form-control::placeholder {
-  color: #dee2e6;
-}
-
-img.rounded-circle {
-  width: 250px;
-  height: 250px;
-}
-
 :root {
-  --bg-color: #ffffff;
-  --text-color: #212529;
+  --bg-color: #007bff;
+  --text-color: #ffffff;
   --nav-bg: #343a40;
-  --card-bg: #f8f9fa;
-  --border-color: #dee2e6;
-  --accent-color: #007bff;
+  --card-bg: rgba(255, 255, 255, 0.1);
+  --border-color: #cce5ff;
+  --accent-color: #4da3ff;
 }
 
 [data-theme="dark"] {
@@ -131,34 +28,75 @@ img.rounded-circle {
 }
 
 body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: 'Arial', sans-serif;
   background-color: var(--bg-color);
   color: var(--text-color);
   transition: background-color 0.3s, color 0.3s;
+}
+
+main {
+  flex: 1;
+  padding: 20px 0;
 }
 
 nav.navbar {
   background-color: var(--nav-bg) !important;
 }
 
-.card {
+.nav-link.active {
+  color: var(--accent-color) !important;
+  font-weight: bold !important;
+}
+
+/* About Section */
+.about-content p {
+  color: var(--text-color) !important;
+}
+
+/* Skills Section */
+.skills-content li {
+  border-left: 3px solid var(--border-color);
+}
+
+/* Education Section */
+.education-card {
+  background-color: var(--card-bg) !important;
+  border: 2px solid var(--border-color) !important;
+}
+
+/* Contact Section */
+.contact-content .contact-card {
   background-color: var(--card-bg);
-  border-color: var(--border-color);
+  border: 2px solid var(--border-color);
+}
+
+.contact-content li {
+  border-left: 3px solid var(--border-color);
+}
+
+/* Form Elements */
+.contact-content .form-control {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-color);
+}
+
+/* Footer */
+footer {
+  background-color: var(--nav-bg);
+  color: var(--text-color);
+}
+
+/* Universal Styles */
+img.rounded-circle {
+  width: 250px;
+  height: 250px;
 }
 
 .btn-outline-secondary {
   border-color: var(--border-color);
   color: var(--text-color);
-}
-
-footer {
-  background-color: #343a40;
-  color: white;
-  text-align: center;
-  padding: 20px 0;
-  margin-top: auto;
-  width: 100%;
-}
-
-footer p {
-  margin-bottom: 0;
 }

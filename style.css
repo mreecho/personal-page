@@ -88,6 +88,31 @@ ul {
   line-height: 1.8;
 }
 
+.contact-content .contact-card {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 2px solid #cce5ff;
+  border-radius: 15px;
+  padding: 2rem;
+}
+
+.contact-content li {
+  font-size: 1.1rem;
+  padding: 10px;
+  border-left: 3px solid #cce5ff;
+  margin: 15px 0;
+  text-align: left;
+}
+
+.contact-content .form-control {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid #cce5ff;
+  color: white;
+}
+
+.contact-content .form-control::placeholder {
+  color: #dee2e6;
+}
+
 ul li {
   background: #f8f9fa;
   padding: 10px;

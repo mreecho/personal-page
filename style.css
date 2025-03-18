@@ -57,10 +57,12 @@ ul {
 
 .skills-content li {
   color: white !important;
+  background-color: transparent !important;
+  border-left: 3px solid #cce5ff !important; 
   font-size: 1.1rem;
   padding: 12px;
-  border-left: 3px solid #ffffff;
   margin: 8px 0;
+  text-align: left;
 }
 
 ul li {

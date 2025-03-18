@@ -29,6 +29,7 @@ main {
 
 header.bg-primary {
   background-color: transparent !important;
+  width: 100%;
 }
 
 nav.navbar.bg-dark.navbar-dark {

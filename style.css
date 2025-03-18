@@ -55,6 +55,14 @@ ul {
   color: white !important;
 }
 
+.skills-content li {
+  color: white !important;
+  font-size: 1.1rem;
+  padding: 12px;
+  border-left: 3px solid #ffffff;
+  margin: 8px 0;
+}
+
 ul li {
   background: #f8f9fa;
   padding: 10px;

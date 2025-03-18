@@ -19,7 +19,17 @@ body {
 
 main {
   flex: 1;
+  background-color: #007bff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 20px 0;
+}
+
+header.bg-primary {
+  background-color: transparent !important;
+  width: 100%;
+  padding: 2rem 0;
 }
 
 nav.navbar.bg-dark.navbar-dark {
